@@ -1,6 +1,36 @@
-.fillerleft {
-  width: 33px;
+body {
+  margin: 0px
+}
+
+#main {
+  width: 100%;
   height: 500px;
-  float: left;
   background-color: black;
+  display: flex;
+}
+
+.filler {
+  width: inherit;
+  height: inherit;
+  flex: 50%;
+}
+
+.opcionescompra {
+  background-color: green;
+  width: inherit;
+  height: inherit;
+}
+
+.titulo {
+  background-color: red;
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+}
+
+p {
+  font-size: 10px;
+  color: lightgrey;
 }
