@@ -3,11 +3,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  text-decoration: none;
 }
 
 .menu-container {
   position: relative;
-  display: inline-block;
+  border: ;
 }
 
 #menu-btn {
@@ -22,21 +23,22 @@ body {
 #menu-list {
   display: none;
   position: absolute;
-  background-color: #fff;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  padding: 0;
+  background-color: black;
+  padding: 10px 100px;
 }
 
-#menu-list li {
-  padding: 10px;
+.menu li {
+  padding: 10px 100px;
   text-align: center;
 }
 
-#menu-list ul li a {
+
+
+.a1 {
   text-decoration: none;
-  color: blue;
+  color: white;
 }
 
-#menu-list li:hover {
-  background-color: #f4f4f4;
+.menu li:hover {
+  background-color: black;
 }
