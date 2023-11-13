@@ -6,14 +6,15 @@ body {
 }
 
 .menu-container {
-  position: relative;
+  position: absolute;
   display: inline-block;
 }
 
 #menu-btn {
-  background-color: #4CAF50;
+  background-color: grey;
   color: white;
-  padding: 10px 20px;
+  width: 30px;
+  height: 30px;
   font-size: 16px;
   border: none;
   cursor: pointer;
