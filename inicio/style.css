@@ -4,6 +4,26 @@ body {
   padding: 0;
   background-color: #f4f4f4;
   text-decoration: none;
+  --sb-track-color: #2d2f2f;
+  --sb-thumb-color: #868686;
+  --sb-size: 5px;
+
+  scrollbar-color: var(--sb-thumb-color) 
+                   var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size) 
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 10px;
 }
 
 .menu-container {
@@ -31,8 +51,6 @@ body {
   padding: 10px 100px;
   text-align: center;
 }
-
-
 
 .a1 {
   text-decoration: none;

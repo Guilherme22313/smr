@@ -47,8 +47,9 @@ h1 {
 }
 
 button {
+  padding: 8%;
   display: block;
-  margin: 0 auto;
+  margin: 5 auto;
   border: solid white 1px;
   background-color: transparent;
 }
