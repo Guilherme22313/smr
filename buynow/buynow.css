@@ -47,9 +47,10 @@ h1 {
 }
 
 button {
-  padding: 8%;
+  width: 50%;
+  height: 20%;
   display: block;
-  margin: 5 auto;
+  margin: 0 auto;
   border: solid white 1px;
   background-color: transparent;
 }
