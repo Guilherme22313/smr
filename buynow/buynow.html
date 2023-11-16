@@ -11,8 +11,7 @@
     
     <body>
         <div id="main">
-
-        <div class="filler"></div>
+            <div class="filler"></div>
     
             <div class="opcionescompra">
                 <div class="titulo">
@@ -20,17 +19,44 @@
                     <h1>Select Your Platform</h1>
                 </div>
 
-                <div class="botones">-*/
-                    <div class="contenedor1">
+                <div class="botones">
+                    <div class="contenedor">
                         <a href="https://store.epicgames.com/en-US/p/the-lord-of-the-rings-return-to-moria-f01344">
-                            <button class="cursor" id="epic">EPIC GAMES</button>
+                            <button><p id="epictext">EPIC GAMES</p></button>
                         </a>
                     </div>
+
+                    <div class="contenedor margen-contenedor">
+                        <div class="nodisponible"><p id="playtext">PlayStation<sub>®</sub></p>
+                        <p class="nodispgrey">AVALIABLE DEC <sub>5</sub></p></div>
+                    </div>
+
+                    <div class="contenedor margen-contenedor">
+                        <div class="nodisponible"><p id="xboxtext">XBOX SERIES X|S</p>
+                        <p class="nodispgrey">COMING SOON</p></div>
+                    </div>
+
+                    <img src="./img/epic_logo.png" id="epic">
+                    <img src="./img/play_logo.png" id="play">
+                    <img src="./img/xbox_logo.png" id="xbox">
                 </div>
             </div>
-    
+
             <div class="filler"></div>
-        
         </div>
+
+        <img src="./img/fondocompra.jpeg" id="fondocompra">
+
+        <footer>
+            <div class="discord">
+                <p class="boldgrey">JOIN THE RETURN TO MORIA DISCORD</p>
+                <h1 class="unite">Unite with Your<br>Fellow Dwarves</h1>
+                <p class="adventure">Adventure awaits in our growing Discord comunity. Join to<br>discover all things Return to Moria.</p>
+        
+                <div class="join">
+                    <img src="./img/discord_logo.png" id="datcord"><p class="dosecords">Join Now</p>
+                </div>
+        </div>
+        </footer>
     </body>
 </html>

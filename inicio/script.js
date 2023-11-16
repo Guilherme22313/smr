@@ -16,3 +16,9 @@ document.addEventListener("click", function(event) {
   }
 });
 
+// No mostrar nav al recargar
+function nav_onload(){
+  var menuList = document.getElementById("menu-lista");
+  menuList.style.display = "none";
+}
+

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Community | The Lord of the Rings: Return to Moria</title>
   <link rel="icon" href="img/favicon.ico">
+  <link rel="shortcut icon" href="img/logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="community.css">
@@ -12,28 +13,95 @@
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-  <div class="nav">
-    <p>oi</p>
-  </div>
-  <section top-padding="0" bottom-padding="0" class="section community-heard">
-    <div class="container community-heard">
+<body onload="nav_onload()">
+  <header class="header">
+    <nav class="nav">
+      <button id="menu-boton"> <img src="img/nav.png"></button>
+      <ul class="menu" id="menu-lista">
+        <li><a class="a1" href="#">News & Updates</a></li>
+        <hr>
+        <li><a class="a1" href="#">Community</a></li>
+        <hr>
+        <li><a class="a1" href="#">Media</a></li>
+        <hr>
+        <li><a class="a1" href="#">Support</a></li> 
+      </ul>
+    </nav>
+    <section class="inicio">
+      <a href="index.html"><button id="home"> <img src="img/home.png" width="220px"></button></a>
+    </section>
+    <section class="comprar">
+      <a href="https://www.returntomoria.com/"><button id="buy"> <img src="img/buy.png"></button></a>
+    </section>
+  </header>
+  <section class="section community-heard">
+  <div class="container community-heard">
     <div class="community_wrap">
       <div class="text">CONCEPT ART BY
-        <a href="https://twitter.com/ReturnToMoria" target="_blank"> @ReturnToMoria</a>
+          <a href="https://twitter.com/ReturnToMoria" target="_blank" class="tw"><strong>@ReturnToMoria</strong></a>
       </div>
         <h1 heading-size="2x1">Become a Part of The Community</h1>
         <p> Join our Discord community to get updates, connect and submit community art!</p>
-      </div>
-      <div class="moria-space"></div>
-      <div class="button-discord">
+    </div>
+    <div class="moria-space"></div>
+    <div class="button-discord">
+      <a href='https://discord.com/invite/6TNP7as9md'><button id="join"><svg class="now" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 20 16" fill="none">
+        <path d="M12.728 0.79989L12.488 1.07289C15.401 1.96289 16.752 3.24889 16.752 3.24889C15.1586 2.36945 13.4083 1.81092 11.6 1.60489C10.4502 1.47764 9.2892 1.48872 8.142 1.63789L7.842 1.67189C6.49658 1.82552 5.18379 2.19034 3.952 2.75289C3.331 3.04289 2.955 3.24889 2.955 3.24889C2.955 3.24889 4.375 1.89589 7.465 1.00489L7.278 0.79989C7.278 0.79989 4.934 0.75689 2.466 2.59989C2.466 2.59989 0 7.06989 0 12.5839C0 12.5839 1.44 15.0689 5.225 15.1869C5.225 15.1869 5.858 14.4169 6.372 13.7669C4.197 13.1159 3.364 11.7459 3.364 11.7459L3.853 12.0359L3.923 12.0859L3.99 12.1229H4.009L4.077 12.1629C4.48 12.3839 4.897 12.5779 5.327 12.7429C6.14 13.0699 6.982 13.3199 7.841 13.4919C9.30571 13.7737 10.8102 13.7794 12.277 13.5089C13.1304 13.36 13.9636 13.1127 14.76 12.7719C15.453 12.5114 16.114 12.1725 16.73 11.7619C16.73 11.7619 15.874 13.1669 13.63 13.7999C14.0001 14.267 14.3761 14.7293 14.758 15.1869C18.543 15.0679 20 12.5829 20 12.5829C20 7.06789 17.534 2.59889 17.534 2.59889C15.072 0.75689 12.728 0.79989 12.728 0.79989ZM6.8 10.9899C5.842 10.9899 5.052 10.1339 5.052 9.08889C5.052 8.04389 5.822 7.18889 6.8 7.18889C7.777 7.18889 8.565 8.04389 8.546 9.08889C8.527 10.1339 7.776 10.9909 6.8 10.9909V10.9899ZM13.051 10.9899C12.093 10.9899 11.305 10.1339 11.305 9.08889C11.305 8.04389 12.075 7.18889 13.051 7.18889C14.027 7.18889 14.799 8.04389 14.799 9.08889C14.799 10.1339 14.027 10.9909 13.051 10.9909V10.9899Z" fill="#E0EEF1"></path>
+      </svg>Join Now</button></a>
+    </div>
+  </div>
+</section>
 
-      </div>
-    </div>
-    <div class="community_bg-container">
-      <div class="community_bg-img"></div>
-    </div>
-   </div>
-  </section>
+<section>
+<div class="fan-art">
+  <div class="linhas">
+    <svg xmlns="http://www.w3.org/2000/svg" width="57" height="87" viewBox="0 0 57 87" fill="none">
+      <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M49.2929 42.5884L0.5 42.5884V43.5884L49.2929 43.5884L56 50.2955L56 86.0884H57L57 50.0884V49.8813L56.8536 49.7349L50.2071 43.0884L56.8536 36.442L57 36.2955V36.0884L57 0.911621H56L56 35.8813L49.2929 42.5884Z" fill="url(#paint0_linear_394_2836)"></path>
+      <defs>
+        <linearGradient id="paint0_linear_394_2836" x1="56" y1="43" x2="0.5" y2="43" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#E0EEF1"></stop>
+          <stop offset="1" stop-color="#E0EEF1" stop-opacity="0"></stop>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+  <div class="meio">
+  <div class="art">Art of Moria</div>
+  <div class="cs"> Use #RTMFanArt to ge featured in our<br>comumunity showcase!</div>
+</div>
+<div class="linhas">
+    <svg xmlns="http://www.w3.org/2000/svg" width="57" height="87" viewBox="0 0 57 87" fill="none">
+      <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M7.70713 43.4116L1 36.7045L1 0.911628L4.10853e-06 0.911628L4.29917e-06 36.9116L4.28107e-06 37.1187L0.146451 37.2652L6.7929 43.9116L0.14645 50.558L3.09336e-06 50.7045L3.07525e-06 50.9116L2.86102e-06 86.0884H1L1 51.1187L7.7071 44.4116L56.5 44.4116V43.4116L7.70713 43.4116Z" fill="url(#paint0_linear_394_2844)"></path>
+        <defs>
+          <linearGradient id="paint0_linear_394_2844" x1="3.5" y1="43" x2="57" y2="43" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0EEF1"></stop>
+            <stop offset="1" stop-color="#E0EEF1" stop-opacity="0"></stop>
+          </linearGradient>
+        </defs>
+    </svg>
+  </div>
+</div>
+</section>
+
+<section>
+  <div>
+    <p>d<br> <br><br><br><br><br><br><br><br></p>
+  </div>
+</section>
+
+<section>
+  <div>
+    <p>d<br><br><br><br><br><br><br><br><br><br><br></p>
+  </div>
+</section>
+
+<section>
+  <div>
+    <p>d<br><br><br><br><br><br><br><br><br><br><br></p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+
 </body>
 </html>
