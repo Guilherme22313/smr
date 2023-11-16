@@ -1,5 +1,5 @@
-document.getElementById("menu-btn").addEventListener("click", function() {
-  var menuList = document.getElementById("menu-list");
+document.getElementById("menu-boton").addEventListener("click", function() {
+  var menuList = document.getElementById("menu-lista");
   if (menuList.style.display === "block") {
     menuList.style.display = "none";
   } else {
@@ -9,9 +9,10 @@ document.getElementById("menu-btn").addEventListener("click", function() {
 
 // Cerrar el menú al hacer clic fuera de él
 document.addEventListener("click", function(event) {
-  var menuContainer = document.querySelector(".menu-container");
+  var menuContainer = document.querySelector(".nav");
   if (!menuContainer.contains(event.target)) {
-    var menuList = document.getElementById("menu-list");
+    var menuList = document.getElementById("menu-lista");
     menuList.style.display = "none";
   }
 });
+
