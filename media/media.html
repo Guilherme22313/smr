@@ -1,22 +1,111 @@
- <!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>Media | The Lord of the Rings: Return to Moria</title>
-  <link rel="icon" href="img/favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="style.css">
-
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="" href="img/favicon.ico">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://db.onlinewebfonts.com/c/6abc665b1724ad77d981ee2a1f84b337?family=Tuna-Medium" rel="stylesheet">
+  <link href="media.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="../img/logo.png">
 </head>
-<body>
-  <div class="contenedor">
-    <section class="home"> 
-      <p>The Lord of the Rings: Return to Moria</p>
+<body onload="nav_onload()">
+
+  <header class="header">
+    <nav class="nav">
+      <button id="menu-boton"> <img src="../img/nav.png"></button>
+      <ul class="menu" id="menu-lista">
+        <li><a class="a1" href="#">News & Updates</a></li>
+        <hr>
+        <li><a class="a1" href="#">Community</a></li>
+        <hr>
+        <li><a class="a1" href="#">Media</a></li>
+        <hr>
+        <li><a class="a1" href="#">Support</a></li> 
+      </ul>
+    </nav>
+    <section class="inicio">
+      <a href="../index.html"><button id="home"> <img src="../img/home.png" width="220px"></button></a>
     </section>
+    <section class="comprar">
+      <a href="https://www.returntomoria.com/"><button id="buy"> <img src="../img/buy.png"></button></a>
+    </section>
+  </header>
+  
+  <div class="contenedor">
+    <div class="izq">a</div>
+    <div class="centro">
+      <div class="media">
+        <h1 class="h1">Media Gallery</h1>
+      </div>
+      <hr>
+      <div class="menu">
+        <div class="videos">
+          <a class="a" href="#">Videos</a>
+        </div>
+        <div class="screen">
+          <a class="a" href="#">Scren Shots</a>
+        </div>
+        <div class="concept">
+          <a class="a" href="#">Concept Art</a> 
+        </div>
+      </div>
+      <hr>
+      <div class="fotos">
+        <div class="recuadro">
+          <div class="imagen">
+            <img src="../img/1.jpg" alt="" width="318px" height="290px">
+          </div>
+          <div class="texto2">
+            <p>TheLord of the Rings: Return to Moria™  - Launch Trailer</p>  
+          </div>
+        </div>
+        <div class="recuadro">
+          <div class="imagen">
+            <img src="../img/2.jpg" alt="" width="318px" height="290px">
+          </div>
+          <div class="texto">
+            <p>Return to Moria™  - Opening Cinematic</p>  
+          </div>
+        </div>
+        <div class="recuadro">
+          <div class="imagen">
+            <img src="../img/3.jpg" alt="" width="318px" height="290px">
+          </div>
+          <div class="texto">
+            <p>Return to Moria™ - Dwarf Creator First Look</p>  
+          </div>
+        </div>
+        <div class="recuadro2">
+          <div class="imagen">
+            <img src="../img/4.jpg" alt="" width="318px" height="290px">
+          </div>
+          <div class="texto">
+            <p>Return to Moria™ - Developer Q+A</p>  
+          </div>
+        </div>
+        <div class="recuadro2">
+          <div class="imagen">
+            <img src="../img/5.jpg" alt="" width="318px" height="290px">
+          </div>
+          <div class="texto">
+            <p>Return to Moria™ - Gameplay Trailer</p>  
+          </div>
+        </div>
+        <div class="recuadro2">
+          <div class="imagen">
+            <img src="../img/6.jpg" alt="" width="318px" height="290px">
+          </div>
+          <div class="texto">
+            <p>Return to Moria™ - Official Announcement Trailer</p>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="der">b</div>
   </div>
+
+  <script src="media.js"></script>
+
 </body>
 </html>
