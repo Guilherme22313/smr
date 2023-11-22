@@ -153,7 +153,6 @@ button {
 /*Sección de footer a copiar y pegar en todas las demás páginas (creo)*/
 
 footer {
-  background-color: red;
   width: 100%;
   height: 1500px;
   margin-top: -400px; /*borra esto si ropme cosas*/
@@ -186,23 +185,150 @@ footer {
   font-size: 18px;
 }
 
-.join{
+.joindiv {
   width: 10%;
-  height: 7%;
-  background-color: rgb(255, 255, 255, 0.2);
-  display: block;
-  border: solid lightgrey 1px;
+  height: 8%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.joinbutton {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255, 0.2);
+  display: block;
+  border: solid lightgrey 1px;
   transition-duration: 500ms;
 }
 
 #datcord {
-  transform: scale(0.2);
+  transform: scale(0.15);
   float: left;
+  margin-top: -33%;
+  margin-left: -50%;
 }
 
 #dosecords {
   float: left;
+  font-size: 22px;
+  margin-bottom: 10%;
+  margin-left: 35%;
+}
+
+.publishers {
+  width: 75%;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#moria {
+  float: left;
+  transform: scale(0.3);
+  margin-top: -2%;
+  margin-left: -18%;
+}
+
+#me {
+  float: right;
+  margin-top: 2%;
+}
+
+#free {
+  float: right;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+#north {
+  float: right;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+.enlaces {
+  background-color: red;
+  width: 75%;
+  height: 320px;
+  position: relative;
+  left: 50%;
+  top: 12%;
+  transform: translateX(-50%);
+}
+
+.discover {
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+
+.headers {
+  color: lightgrey;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footerlinks {
+  color: lightgrey;
+  font-size: 15px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition-duration: 100ms;
+}
+
+.footerlinks:hover {
+  color: white
+}
+
+.roundbtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.x {
+  margin-left: -8%;
+}
+
+#x {
+  transform: scale(0.06);
+  margin-top: -217px;
+  margin-left: -220px;
+}
+
+.tik {
+  margin-left: -4%;
+}
+
+#tik {
+  margin-top: 4px;
+}
+
+#discordunavezmas {
+  margin-top: -79px;
+  margin-left: -113px;
+  transform: scale(0.12);
+}
+
+.youtube {
+  margin-left: 4%;
+}
+
+#youtube {
+  margin-top: -337px;
+  margin-left: -492px;
+  transform: scale(0.032);
+}
+
+.registro {
+  float: left;
+  background-color: blue;
+  width: 40%;
+  height: 100%;
+}
+
+#signup {
+  margin-top: 0px;
 }
