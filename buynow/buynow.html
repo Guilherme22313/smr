@@ -55,7 +55,7 @@
         
                 <div class="joindiv">
                     <a href="https://discord.com/invite/6TNP7as9md">
-                    <img src="./img/discord_logo.png" id="datcord">
+                    <img src="./img/discord_logo_join.png" id="datcord">
                             <button class="joinbutton"><p id="dosecords">Join Now</p></button>
                     </a>
                 </div>
@@ -83,23 +83,33 @@
             <div class="enlaces">
                 <div class="discover">
                     <p class="headers">DISCOVER MORIA</p>
-                        <p class="footerlinks">News & Updates</p>
-                        <p class="footerlinks">Community</p>
-                        <p class="footerlinks">Media</p>
-                        <p class="footerlinks">Support</p>
-                        <p class="footerlinks">Contact Us</p>
+                        <p class="footerlinks footlink1">
+                            <a href="">News & Updates</a>
+                        </p>
+                        <p class="footerlinks footlink3">
+                            <a href="">Community</a>
+                        </p>
+                        <p class="footerlinks footlink3">
+                            <a href="">Media</a>
+                        </p>
+                        <p class="footerlinks footlink3">
+                            <a href="">Support</a>
+                        </p>
+                        <p class="footerlinks footlink2">
+                            <a href="">Contact Us</a>
+                        </p>
                 </div>
 
                 <div class="discover">
                     <p class="headers">BUY NOW</p>
-                        <a href="https://store.epicgames.com/es-ES/p/the-lord-of-the-rings-return-to-moria-f01344">
-                            <p class="footerlinks">Epic Game Store</p>
-                        </a>
+                        <p class="footerlinks footlink1">
+                            <a href="https://store.epicgames.com/es-ES/p/the-lord-of-the-rings-return-to-moria-f01344">Epic Game Store</a>
+                        </p>
                 </div>
 
                 <div class="discover">
                     <p class="headers">DISCOVER MORIA</p>
-                        <a href="https://twitter.com/ReturnToMoria">
+                        <a href="https://twitter.com/ReturnToMoria" class="overflow">
                             <button class="roundbtn x"><img src="./img/x_logo.png" id="x"></button>
                         </a>
                         
@@ -119,10 +129,29 @@
                 <div class="registro">
                     <h1 id="signup">Sign Up for News and Updates</h1>
 
-                    <form>
-                        <input type="text" id="mail" name="mail" value="Email">
+                    <form id="registroscript">
+                        <input type="email" id="mail" name="mail" placeholder="Email" required>
+
+                        <input type="submit" value="Sign Up" class="botonregistro">
                     </form>
                 </div>
+            </div>
+
+            <div class="disclaimer">
+                <p class="cosaslegales">Privacy Policy</p>
+                <p class="cosaslegales">Terms of Service</p>
+                <p class="cosaslegales">End User License Agreement</p>
+
+                <p id="eula">©2023 Middle-earth Enterprises. All rights reserver. "Moria", "Middle-Earth" and "The Lord of the Rings" and the names of the characters, events, items,<br>
+                and the places therein are trademarks or regiteres trademarks of Miffle-earth Enterprises, LLC under license to Open Door Entertainment, LLC dba North<br>
+                Beach Games.<br>
+                ©2023 Free Range Games. All rights reserved. Free Range Games and the Free Range Games logo are trademarks or service marks of Free Range Games.<br>
+                ©2023 North Beach Games and associated logod and names are registered trademarks of Open Door Entertainment, LLC. All rights reserved.<br>
+                </p>
+
+                <img src="./img/esrb.png" class="rating">
+                <img src="./img/violence.png" class="rating">
+                <img src="./img/pegi.png" class="rating">
             </div>
         </footer>
     </body>

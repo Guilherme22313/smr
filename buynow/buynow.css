@@ -9,6 +9,8 @@ a {
   text-decoration: none;
 }
 
+/*Sección de compra*/
+
 button:hover {
   cursor: pointer;
   background-color: rgba(255, 248, 144, 0.3);
@@ -154,7 +156,7 @@ button {
 
 footer {
   width: 100%;
-  height: 1500px;
+  height: 1220px;
   margin-top: -400px; /*borra esto si ropme cosas*/
 }
 
@@ -249,7 +251,6 @@ footer {
 }
 
 .enlaces {
-  background-color: red;
   width: 75%;
   height: 320px;
   position: relative;
@@ -274,8 +275,19 @@ footer {
   color: lightgrey;
   font-size: 15px;
   margin-top: 30px;
-  cursor: pointer;
   transition-duration: 100ms;
+}
+
+.footlink1 {
+  width: 103px;
+}
+
+.footlink2 {
+  width: 68px;
+}
+
+.footlink3 {
+  width: 10px;
 }
 
 .footerlinks:hover {
@@ -293,9 +305,8 @@ footer {
 }
 
 #x {
-  transform: scale(0.06);
-  margin-top: -217px;
-  margin-left: -220px;
+  margin-top: 5px;
+  transform: scale(0.9);
 }
 
 .tik {
@@ -307,9 +318,7 @@ footer {
 }
 
 #discordunavezmas {
-  margin-top: -79px;
-  margin-left: -113px;
-  transform: scale(0.12);
+  margin-top: 4px;
 }
 
 .youtube {
@@ -317,18 +326,90 @@ footer {
 }
 
 #youtube {
-  margin-top: -337px;
-  margin-left: -492px;
-  transform: scale(0.032);
+  margin-top: 2px;
+}
+
+.overflow {
+  width: 50px;
+  height: 50px;
 }
 
 .registro {
-  float: left;
-  background-color: blue;
-  width: 40%;
+  float: right;
+  width: 32%;
   height: 100%;
 }
 
 #signup {
   margin-top: 0px;
+}
+
+input {
+  width: 98%;
+  height: 35px;
+  color: white;
+  background-color: inherit;
+  border: 1px solid grey;
+  outline: none;
+  border-radius: 1px;
+  transition: 200ms;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.invalid {
+  border: 1px solid red;
+}
+
+.botonregistro {
+  width: 99.5%;
+  height: 40px;
+  margin-top: 10px;
+  background-color: rgba(34,34,38);
+  border-color: grey;
+  font-weight: bold;
+  font-size: 14px;
+  transition: none;
+}
+
+.botonregistro:hover {
+  background-color: rgb(169, 169, 169);
+  cursor: pointer;
+}
+
+.disclaimer {
+  width: 75%;
+  height: 18%;
+  position: relative;
+  left: 50%;
+  margin-top: 10%;
+  transform: translateX(-50%);
+}
+
+.cosaslegales {
+  float: left;
+  margin-right: 1%;
+  font-size: medium;
+}
+
+.cosaslegales:hover {
+  color: white;
+  cursor: pointer;
+}
+
+#eula {
+  float: left;
+  margin-left: -30.2%;
+  margin-top: 4%;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.rating {
+  float: right;
+  margin-top: 5%;
+  margin-left: 1%;
 }

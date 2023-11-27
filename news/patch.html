@@ -1,223 +1,261 @@
-    <!DOCTYPE html>
-    <html lang="pt-BR">
-    <head>
-      <meta charset="UTF-8">
-      <title>Latest News | The Lord of the Rings: Return to Moria</title>
-      <link rel="icon" href="img/favicon.ico">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Latest News | The Lord of the Rings: Return to Moria</title>
+  <link rel="icon" href="img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <link rel="stylesheet" href="patch.css">
+  <link rel="stylesheet" href="patch.css">
+  
+  <script src="patch.js"></script>
 
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap" rel="stylesheet">
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    </head>
-    <body>
-    <div class="nav-container">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body onload="nav_onload()">
 
-      <div class="desplegable">
-        <p> Menu </p>
+  <header class="header">
+    <nav class="nav">
+      <button id="menu-boton"> <img src="img/nav.png"></button>
+      <ul class="menu" id="menu-lista">
+        <li><a class="a1" href="patch.html">News & Updates</a></li>
+        <hr>
+        <li><a class="a1" href="community.html">Community</a></li>
+        <hr>
+        <li><a class="a1" href="media.html">Media</a></li>
+        <hr>
+        <li><a class="a1" href="support.html">Support</a></li> 
+      </ul>
+    </nav>
+    <section class="inicio">
+      <a href="index.html"><button id="home"> <img src="img/home.png" width="220px"></button></a>
+    </section>
+    <section class="comprar">
+      <a href="buynow.html"><button id="buy"> <img src="img/buy.png"></button></a>
+    </section>
+  </header>
+
+
+</div>
+
+<section class="section-header"> 
+  <div class="conteiner-news-header"> 
+    <a href="patch.html"> <img class="img2" src="img/foto1.jpg"></a>
+    <div class="new-header-content-conteiner">
+      <div class="news-header-content-wrap"> 
+        <h1 heading-size="2x1"> Patch 1.0.2 Realease Notes </h1>
       </div>
-      <img class="img1" src="fotos/logo.webp">
-      <div class="buy ">
-        <p> Buy Now</p>
-      </div>
-
-
+      <div class="divider-line mid-mute"></div>
     </div>
+  </div>
+</section>
 
-    <section class="section-header"> 
-      <div class="conteiner-news-header"> 
-        <a href="patch.html"> <img class="img2" src="fotos/foto1.jpg"></a>
-        <div class="new-header-content-conteiner">
-          <div class="news-header-content-wrap"> 
-            <h1 heading-size="2x1"> Patch 1.0.2 Realease Notes </h1>
+<section class="section">
+  <div class="conteiner new-body">
+    <div class="new-body-grid">
+      <div id="itemA">
+        <p><em>Turugnî hisgin!</em><br>Greetings!</p>
+        <p>‍<br>Happy Patch 1.0.2 day!<br><br><br>‍</p>
+        <p>Firstly, on behalf of the team, thank you to everyone for your support of <em>The Lord of the Rings: Return
+            to Moria</em>. Our motto in the next few months is “<em>Mumshanmê,</em>
+          ” the Khuzdul word for “At your service.” We are humbled by how many people love and enjoy the game. It is now
+          our job to pore over your feedback and reports so we can keep improving
+          your experience! While Version 1.0.2 is just the first of many patches and updates to come, it includes over
+          120 individual fixes and we hope you feel the difference.<br><br>‍</p>
+        <p>Please continue to report any feedback and issues you experience via our <a
+            href="https://northbeachgames.freshdesk.com/support/home">support page</a>. The information shared in
+          these reports is very helpful to the team, especially when it comes to quickly resolving bugs and making
+          gameplay adjustments.<br><br>‍</p>
+        <p>We are already hard at work on our next update about which we will share more details as we get closer to
+          finalizing. <br><br>‍</p>
+        <p>Thank you once again for all your support - we’re really enjoying hearing about all the adventures players
+          are having as they take back Moria!<br><br><em>Baruk Khazâd!<br></em>- The RtM Team</p>
+
+        Statue Repair and Recipe Fragments:
+        <ul>
+          <li> Many players reported that repairing statues gave them coins instead of a recipe, sometimes even
+            preventing
+            them from progressing. The cause of this is now fixed. </li>
+          <li> Please Note! If you were affected by this bug, we have re-broken all statues in the world. Any previously
+            restored statue will be repairable for free and should immediately start awarding any missing recipe
+            fragments.
+          </li>
+          <li> The reward for repairing statues after collecting all fragments has been changed to coal and iron ore.
+            Please
+            note, If you receive ore instead of an expected recipe fragment please try repairing a few more statues to
+            let the
+            system catch up. </li>
+        </ul>
+
+        Performance & Bugs:
+        <ul>
+          <li> Improved load times when fast traveling between locations in the world, especially very large locations
+            like
+            the Drain Pumps. We say “improved” because it will get better in the next update. </li>
+          <li> Fixed issues with Meal Tables, Bellows and other crafting stations that failed to register in multiplayer
+            games. </li>
+          <li> Fixed issue with furnace timer not counting down after sleeping. </li>
+          <li> Fixed issue with furnace not allowing player to collect ingots after sleeping in the same bubble. </li>
+          <li> Fixed issue that prevented use of the Rune table when the incorrect text “ "Only in KO and CN" was
+            erroneously
+            displayed.</li>
+          <li> Further work to reduce infinite and long loading “Dot” walls.</li>
+          <li> Fixed issue where Drakes and Spiders would get stuck and not move or attack correctly. </li>
+          <li> Fix to multiplayer connections that disconnected all players at once. That was a fun Friday night. </li>
+          <li> At least 7 known crashes resolved. </li>
+          <li>Many other smaller bugs and issues were resolved. </li>
+        </ul>
+
+        Tuning Improvements, based on Community feedback:
+        <ul>
+          <li>Drastically reduced number of enemy patrols, especially at night. </li>
+          <li>Increased rewards for fighting enemies, including a rare Black Diamond drop on Orcs and Uruks plus a
+            guaranteed
+            Black Diamond drop for Trolls and Nameless Beasts. Let’s go hunt some Troll. </li>
+          <li>Reduced the average difficulty of enemy encounters in Westgate. </li>
+          <li>Reduced number of wolves in Elven Quarter. </li>
+          <li>Nerfed the penalties for Fast Travel, including: reduced Energy and Hunger costs, added a short window to
+            fast
+            travel again without penalty (a do-over), and now buffs from meals (“Well Fed”, “Full”, “Stuffed”) will
+            negate the
+            costs of fast travel. </li>
+          <li>Increased the prevalence of scale drops, including from Drakes and, rarely, Ghash Orcs. Additionally, the
+            scale
+            cost of the Shaz’akhnaman has been reduced. </li>
+          <li>Increased the drop rate of Gundabad Slag from Gundabad orcs while also reducing the amount needed to smelt
+            Durinul Iron Ingots. </li>
+          <li>The Torch, Zarôk Torch, and Miner’s Helmet now prevent Despair at night by dispelling the “In Darkness”
+            debuff.
+            Note: Despair will still occur in the Darkest Deeps and when touching shadow regardless. </li>
+          <li>Deep Orc camps now populate with the correct number of enemies. </li>
+          <li>Fixed issue where singing would stop stamina from draining for all activities, instead of just mining, as
+            was
+            originally intended. </li>
+          <li>Legendary Forges no longer have fuel requirements. </li>
+          <li>Player health when respawning from death increased to 100% </li>
+          <li>Player health when revived by a friends increased to 40% </li>
+          <li>Slight decrease in HP restored by rations, primarily Cram. </li>
+          <li>A set of wooden stairs was added to the initial building set </li>
+          <li>For players who have previously built a small hearth the stairs should unlock when you manipulate items in
+            your
+            inventory. </li>
+          <li>Increased the Ironwood rune’s drop chance for Ironwood. If you have not discovered this yet, the best way
+            to
+            gain Ironwood remains to inscribe a rune on an axe and go tree chopping. </li>
+        </ul>
+
+        Art & Audio
+        <ul>
+          <li> Updated wake up after death animation </li>
+          <li> Improved enemy death poses to prevent cut off body parts </li>
+          <li> Spiders nests will no longer flicker </li>
+          <li> Player dialog volume balancing while in combat. </li>
+          <li> Reduced wing flap volume for flying creatures. </li>
+          <li> Reduced specific Orc Screaming audio event. Most players know the one. </li>
+        </ul>
+
+        Fight at the Drain Pumps
+        <ul>
+          <li> Fixed issue where client could not see that enemy’s damage state </li>
+          <li> During the fight, piers are now much more vulnerable to destruction. Watch where you are standing! </li>
+        </ul>
+
+
+        Final Boss Fight
+        <ul>
+          <li>Improvements to story path before and after. </li>
+          <li>Lip sync improvements during conversation with Her. </li>
+          <li>Many audio tweaks and tuning to improve the experience of the final boss fight. </li>
+          <li>Many more experiential improvements to come in the next update. </li>
+        </ul>
+
+        Controller Support
+        <ul>
+          <li>Fixed a soft lock when fast traveling while using a controller </li>
+          <li>Added Exit functionality to chat when using the controller. </li>
+          <li>Fixed “Mark all as read” functionality on controller </li>
+          <li>Menus show correct inputs when using controller (instead of keyboard) </li>
+        </ul>
+
+        Localization:
+        <ul>
+          <li>Fixed a number of untranslated (English) strings for all supported languages. </li>
+        </ul>
+      </div>
+      <div id="itemB">
+        <div class="new-body-stick">
+          <div class="stick-zta">
+            <div class="w"><svg xmlns="http://www.w3.org/2000/svg" width="86" height="57" viewBox="0 0 86 57" fill="none">
+                <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M43.0884 48.7929L49.7955 55.5L85.5884 55.5L85.5884 56.5L49.5884 56.5L49.3813 56.5L49.2349 56.3535L42.5884 49.7071L35.942 56.3535L35.7955 56.5L35.5884 56.5L0.411621 56.5L0.411621 55.5L35.3813 55.5L42.0884 48.7929L42.0884 -7.4582e-06L43.0884 -7.54562e-06L43.0884 48.7929Z"
+                  fill="url(#paint0_linear_107_604)"></path>
+                <defs>
+                  <linearGradient id="paint0_linear_107_604" x1="43" y1="56.5" x2="43" y2="-3.11115e-05"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#E0EEF1"></stop>
+                    <stop offset="1" stop-color="#E0EEF1" stop-opacity="0"></stop>
+                  </linearGradient>
+                </defs>
+              </svg></div>
+            <br>
+            <p class="Avaliable"> Available Now</p>
+            <h3> Lords Of The Rings: <br> Return To Moria</h3>
+      
+            <div class="w"> <svg xmlns="http://www.w3.org/2000/svg" width="86" height="57" viewBox="0 0 86 57" fill="none">
+                <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M43.0884 8.20709L49.7955 1.50001L85.5884 1.50001L85.5884 0.500007L49.5884 0.500008L49.3813 0.500008L49.2349 0.646454L42.5884 7.2929L35.942 0.646453L35.7955 0.500006L35.5884 0.500006L0.411621 0.500006L0.411621 1.50001L35.3813 1.50001L42.0884 8.20714L42.0884 57L43.0884 57L43.0884 8.20709Z"
+                  fill="url(#paint0_linear_107_601)"></path>
+                <defs>
+                  <linearGradient id="paint0_linear_107_601" x1="43" y1="0.500004" x2="43" y2="57"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#E0EEF1"></stop>
+                    <stop offset="1" stop-color="#E0EEF1" stop-opacity="0"></stop>
+                  </linearGradient>
+                </defs>
+              </svg></div>
+            <div class="epic"> <a href="https://store.epicgames.com/en-US/p/the-lord-of-the-rings-return-to-moria-f01344"> <img src="img/epic.png"> </a> </div>
           </div>
-          <div class="divider-line mid-mute"></div>
         </div>
       </div>
-    </section>
+      </div>
+      </div>
+</section>
 
-    <section class="section">
-      <div class="conteiner new-body">
-        <div class="new-body-grid">
-          <div id="itemA">
-            <p><em>Turugnî hisgin!</em><br>Greetings!</p>
-            <p>‍<br>Happy Patch 1.0.2 day!<br><br><br>‍</p>
-            <p>Firstly, on behalf of the team, thank you to everyone for your support of <em>The Lord of the Rings: Return
-                to Moria</em>. Our motto in the next few months is “<em>Mumshanmê,</em>
-              ” the Khuzdul word for “At your service.” We are humbled by how many people love and enjoy the game. It is now
-              our job to pore over your feedback and reports so we can keep improving
-              your experience! While Version 1.0.2 is just the first of many patches and updates to come, it includes over
-              120 individual fixes and we hope you feel the difference.<br><br>‍</p>
-            <p>Please continue to report any feedback and issues you experience via our <a
-                href="https://northbeachgames.freshdesk.com/support/home">support page</a>. The information shared in
-              these reports is very helpful to the team, especially when it comes to quickly resolving bugs and making
-              gameplay adjustments.<br><br>‍</p>
-            <p>We are already hard at work on our next update about which we will share more details as we get closer to
-              finalizing. <br><br>‍</p>
-            <p>Thank you once again for all your support - we’re really enjoying hearing about all the adventures players
-              are having as they take back Moria!<br><br><em>Baruk Khazâd!<br></em>- The RtM Team</p>
-
-            Statue Repair and Recipe Fragments:
-            <ul>
-              <li> Many players reported that repairing statues gave them coins instead of a recipe, sometimes even
-                preventing
-                them from progressing. The cause of this is now fixed. </li>
-              <li> Please Note! If you were affected by this bug, we have re-broken all statues in the world. Any previously
-                restored statue will be repairable for free and should immediately start awarding any missing recipe
-                fragments.
-              </li>
-              <li> The reward for repairing statues after collecting all fragments has been changed to coal and iron ore.
-                Please
-                note, If you receive ore instead of an expected recipe fragment please try repairing a few more statues to
-                let the
-                system catch up. </li>
-            </ul>
-
-            Performance & Bugs:
-            <ul>
-              <li> Improved load times when fast traveling between locations in the world, especially very large locations
-                like
-                the Drain Pumps. We say “improved” because it will get better in the next update. </li>
-              <li> Fixed issues with Meal Tables, Bellows and other crafting stations that failed to register in multiplayer
-                games. </li>
-              <li> Fixed issue with furnace timer not counting down after sleeping. </li>
-              <li> Fixed issue with furnace not allowing player to collect ingots after sleeping in the same bubble. </li>
-              <li> Fixed issue that prevented use of the Rune table when the incorrect text “ "Only in KO and CN" was
-                erroneously
-                displayed.</li>
-              <li> Further work to reduce infinite and long loading “Dot” walls.</li>
-              <li> Fixed issue where Drakes and Spiders would get stuck and not move or attack correctly. </li>
-              <li> Fix to multiplayer connections that disconnected all players at once. That was a fun Friday night. </li>
-              <li> At least 7 known crashes resolved. </li>
-              <li>Many other smaller bugs and issues were resolved. </li>
-            </ul>
-
-            Tuning Improvements, based on Community feedback:
-            <ul>
-              <li>Drastically reduced number of enemy patrols, especially at night. </li>
-              <li>Increased rewards for fighting enemies, including a rare Black Diamond drop on Orcs and Uruks plus a
-                guaranteed
-                Black Diamond drop for Trolls and Nameless Beasts. Let’s go hunt some Troll. </li>
-              <li>Reduced the average difficulty of enemy encounters in Westgate. </li>
-              <li>Reduced number of wolves in Elven Quarter. </li>
-              <li>Nerfed the penalties for Fast Travel, including: reduced Energy and Hunger costs, added a short window to
-                fast
-                travel again without penalty (a do-over), and now buffs from meals (“Well Fed”, “Full”, “Stuffed”) will
-                negate the
-                costs of fast travel. </li>
-              <li>Increased the prevalence of scale drops, including from Drakes and, rarely, Ghash Orcs. Additionally, the
-                scale
-                cost of the Shaz’akhnaman has been reduced. </li>
-              <li>Increased the drop rate of Gundabad Slag from Gundabad orcs while also reducing the amount needed to smelt
-                Durinul Iron Ingots. </li>
-              <li>The Torch, Zarôk Torch, and Miner’s Helmet now prevent Despair at night by dispelling the “In Darkness”
-                debuff.
-                Note: Despair will still occur in the Darkest Deeps and when touching shadow regardless. </li>
-              <li>Deep Orc camps now populate with the correct number of enemies. </li>
-              <li>Fixed issue where singing would stop stamina from draining for all activities, instead of just mining, as
-                was
-                originally intended. </li>
-              <li>Legendary Forges no longer have fuel requirements. </li>
-              <li>Player health when respawning from death increased to 100% </li>
-              <li>Player health when revived by a friends increased to 40% </li>
-              <li>Slight decrease in HP restored by rations, primarily Cram. </li>
-              <li>A set of wooden stairs was added to the initial building set </li>
-              <li>For players who have previously built a small hearth the stairs should unlock when you manipulate items in
-                your
-                inventory. </li>
-              <li>Increased the Ironwood rune’s drop chance for Ironwood. If you have not discovered this yet, the best way
-                to
-                gain Ironwood remains to inscribe a rune on an axe and go tree chopping. </li>
-            </ul>
-
-            Art & Audio
-            <ul>
-              <li> Updated wake up after death animation </li>
-              <li> Improved enemy death poses to prevent cut off body parts </li>
-              <li> Spiders nests will no longer flicker </li>
-              <li> Player dialog volume balancing while in combat. </li>
-              <li> Reduced wing flap volume for flying creatures. </li>
-              <li> Reduced specific Orc Screaming audio event. Most players know the one. </li>
-            </ul>
-
-            Fight at the Drain Pumps
-            <ul>
-              <li> Fixed issue where client could not see that enemy’s damage state </li>
-              <li> During the fight, piers are now much more vulnerable to destruction. Watch where you are standing! </li>
-            </ul>
+<section class="section"> 
+<div class="related"> 
+  <h1 > Related News</h1>
+</div>
+<div class="all">
+<p> All News</p>  
+</div>
+</section>
 
 
-            Final Boss Fight
-            <ul>
-              <li>Improvements to story path before and after. </li>
-              <li>Lip sync improvements during conversation with Her. </li>
-              <li>Many audio tweaks and tuning to improve the experience of the final boss fight. </li>
-              <li>Many more experiential improvements to come in the next update. </li>
-            </ul>
 
-            Controller Support
-            <ul>
-              <li>Fixed a soft lock when fast traveling while using a controller </li>
-              <li>Added Exit functionality to chat when using the controller. </li>
-              <li>Fixed “Mark all as read” functionality on controller </li>
-              <li>Menus show correct inputs when using controller (instead of keyboard) </li>
-            </ul>
+  
+<div class="grid-container">
+  <div class="grid-item">
+    <img src="img/Foto2.png">
+    <h3>Developers Free RangeGame Share of an Upcoming Patch and what to Expect in the First Update</h3>
+    <p>Following Hotfix 1.0.1, the team have shared what players can expect in Patch 1, Update 1 and beyond!</p>
+  </div>
 
-            Localization:
-            <ul>
-              <li>Fixed a number of untranslated (English) strings for all supported languages. </li>
-            </ul>
-          </div>
-          <div id="itemB">
-            <div class="new-body-stick">
-              <div class="stick-zta">
-                <div class="w"><svg xmlns="http://www.w3.org/2000/svg" width="86" height="57" viewBox="0 0 86 57" fill="none">
-                    <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"
-                      d="M43.0884 48.7929L49.7955 55.5L85.5884 55.5L85.5884 56.5L49.5884 56.5L49.3813 56.5L49.2349 56.3535L42.5884 49.7071L35.942 56.3535L35.7955 56.5L35.5884 56.5L0.411621 56.5L0.411621 55.5L35.3813 55.5L42.0884 48.7929L42.0884 -7.4582e-06L43.0884 -7.54562e-06L43.0884 48.7929Z"
-                      fill="url(#paint0_linear_107_604)"></path>
-                    <defs>
-                      <linearGradient id="paint0_linear_107_604" x1="43" y1="56.5" x2="43" y2="-3.11115e-05"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#E0EEF1"></stop>
-                        <stop offset="1" stop-color="#E0EEF1" stop-opacity="0"></stop>
-                      </linearGradient>
-                    </defs>
-                  </svg></div>
-                <br>
-                <p class="Avaliable"> Available Now</p>
-                <h3> Lords Of The Rings: <br> Return To Moria</h3>
+  <div class="grid-item">
+    <img src="img/Foto3.jpg">
+    <h3>Embark on a New Adventure to Reclaim the Lost Kingdom of Khazad-dûm in The Lord of the Rings: Return to Moria™, Available Now on PC</h3>
+    <p>New Survival Crafting Game from Free Range Games and North Beach Games Welcomes All Dwarves to Revisit, Retake, and Rebuild the Mysterious Mines of Moria</p>
+  </div>
 
-                <div class="w"> <svg xmlns="http://www.w3.org/2000/svg" width="86" height="57" viewBox="0 0 86 57" fill="none">
-                    <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"
-                      d="M43.0884 8.20709L49.7955 1.50001L85.5884 1.50001L85.5884 0.500007L49.5884 0.500008L49.3813 0.500008L49.2349 0.646454L42.5884 7.2929L35.942 0.646453L35.7955 0.500006L35.5884 0.500006L0.411621 0.500006L0.411621 1.50001L35.3813 1.50001L42.0884 8.20714L42.0884 57L43.0884 57L43.0884 8.20709Z"
-                      fill="url(#paint0_linear_107_601)"></path>
-                    <defs>
-                      <linearGradient id="paint0_linear_107_601" x1="43" y1="0.500004" x2="43" y2="57"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#E0EEF1"></stop>
-                        <stop offset="1" stop-color="#E0EEF1" stop-opacity="0"></stop>
-                      </linearGradient>
-                    </defs>
-                  </svg></div>
-                <div class="epic"> <a href="https://store.epicgames.com/en-US/p/the-lord-of-the-rings-return-to-moria-f01344">
-                    <img src="fotos/epic.png"> </a> </div>
-              </div>
-            </div>
-          </div>
-          </div>
-          </div>
-    </section>
+  <div class="grid-item">
+    <img src="img/Foto4.jpg">
+    <h3>The Lord of the Rings: Return to Moria™ has Officially Gone… ‘Mithril’ for PC Ahead of October 24 Launch; PlayStation®5 Version Delayed to December 2023</h3>
+    <p>Independent developer Free Range Games and publisher North Beach Games are happy to announce that their highly-anticipated co-op survival crafting title, The Lord of the Rings: Return to Moria, has finished the final stages of development and has officially gone ‘Mithril’ (Gold) for PC ahead of its Oct. 24 launch.</p>
+  </div>
+</div>
 
-    <section class="section"> 
-    <div class="related"> 
-      <h1 > Related News</h1>
-    </div>
-    <div class="all">
-    <p> All News</p>  
-    </div>
-    </section>
 
-    </body>
-    </html>
+
+</body>
+</html>
