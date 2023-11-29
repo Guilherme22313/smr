@@ -1,0 +1,734 @@
+/* INICIO PARAMETROS GENERALES */
+
+*{
+    font-family: "Tuna-Medium";
+  }
+  
+  body {
+      margin: 0;
+      padding: 0;
+      color: white;
+      background-color: black;
+      --sb-track-color: #2d2f2f;
+      --sb-thumb-color: #868686;
+      --sb-size: 5px;
+      scrollbar-color: var(--sb-thumb-color) 
+                       var(--sb-track-color);
+    }
+    
+    body::-webkit-scrollbar {
+      width: var(--sb-size) 
+    }
+  
+    body::-webkit-scrollbar-track {
+      background: var(--sb-track-color);
+      border-radius: 10px;
+    }
+  
+    body::-webkit-scrollbar-thumb {
+      background: var(--sb-thumb-color);
+      border-radius: 10px;
+    }
+  
+    /* FINAL PARAMETROS GENERALES */
+  
+    /* INICIO HEADER */
+    
+    .menu-container {
+      background-color: black;
+      float: left;
+    }
+    
+    .header {
+      background-color: black; 
+      width:100%; 
+      height:100px;
+      position: fixed;
+      z-index: 1;
+    }
+    
+    .nav {
+      width:20%; 
+      height:100px;
+      float:left; 
+    
+    }
+    
+    #menu-boton {
+      background-color: #1c1c20;
+      color: #e0eef1;
+      margin-top: 25px;
+      padding: 12px 11px;
+      font-size: 10px;
+      margin-left: 300px;
+      border: 1px solid gray;
+      cursor: pointer;
+      transition-duration: 500ms;
+    }
+  
+    #menu-boton:hover {
+      cursor: pointer;
+      background-color: rgba(255, 248, 144, 0.3);
+      border-color: rgba(255, 248, 144, 0.3);
+    }
+    
+    #menu-lista {
+      position: absolute;
+      background-color: black;
+      height: 200px;
+      padding: 22px 22px;
+      width: 300px;
+      border: 1px solid gray;
+      margin-left: 300px;
+      margin-top: 20px;
+      list-style: none;
+    }
+    
+    .menu li {
+      padding: 10px 100px;
+      text-align:left;
+      padding-left: 0px;
+    }
+    
+    .a1 {
+      text-decoration: none;
+      color: white;
+      text-align:left;
+    }
+    
+    .menu li:hover {
+      background-color: black;
+    }
+    
+    .inicio{
+      width:60%;
+      height:100px; 
+      float:left; 
+    }
+    
+    #home{
+      width: 270px;
+      height: 100px;
+      margin-left: 450px ;
+      background-color: black;
+      cursor: pointer;
+      border: none;
+     }
+    
+    .comprar {
+      width:20%; 
+      height:100px;
+      float:left; 
+    }
+    
+    #buy {
+      background-color: #1c1c20;
+      color: #e0eef1;
+      margin-top: 25px;
+      padding: 10px 12px;
+      font-size: 10px;
+      border: 1px solid gray;
+      margin-left: 30px;
+      cursor: pointer;
+      transition-duration: 500ms;
+    }
+  
+    #buy:hover {
+      cursor: pointer;
+      background-color: rgba(255, 248, 144, 0.3);
+      border-color: rgba(255, 248, 144, 0.3);
+    }
+  
+    /* FINAL HEADER */
+    
+    /* INICIO CONTENIDO */
+  
+    .contenedor{
+      height: 100%;
+      width: 100%;
+    }
+    
+    .izq{
+      width: 20%;
+      height: 100%;
+      float:left;
+    }
+    
+    .contenido{
+      width: 60%;
+      height: 100%;
+      float:left;
+    }
+    
+    .der{
+      width: 20%;
+      height: 100%;
+      float:left;
+    }
+  
+    .about {
+      width: 100%;
+      height: 1500px;
+      background-image: url("../img/background1.webp");
+      background-repeat: no-repeat, no-repeat;
+      background-size: 100%;
+    }
+  
+    .about-texto{
+      width: 100%;
+      height: 335px;
+    }
+  
+    .svg{
+      text-align: center;
+      padding-top: 25px;
+      height: 50px;
+    }
+  
+    .svg1{
+      text-align: center;
+      padding-top: 25px;
+      height: 50px;
+    }
+  
+    .h2 {
+      color: white;
+      text-align: center;
+      display: block;
+      font-size: 50px;
+      font-weight: 500;
+      line-height: 0.8;
+    }
+  
+    .p {
+      color: white;
+      opacity: 0.5;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 2.0;
+    }
+  
+    .avaliable {
+      width: 100%;
+      height: 100px;
+      padding-top: 40px;
+    }
+  
+    .avaliable-txt {
+      float: left;
+      text-align: center;
+      width: 15%;
+    }
+  
+    .svg2{
+      text-align: right;
+      padding-top: 25px;
+      height: 50px;
+      width: 42%;
+      float: left;
+      margin-right: 10px;
+      
+    }
+  
+    .svg3{
+      text-align: left;
+      padding-top: 25px;
+      height: 50px;
+      float: left;
+      width: 40%;
+      margin-left: 8px;
+    }
+  
+    .p-a{
+      color: white;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 300;
+    }
+  
+    .boton {
+      width: 100%;
+      height: 110px;
+      padding: 0;
+    }
+  
+    #epictext {
+      font-size: 20px;
+      color: white;
+      margin-left: 40px;
+      font-weight: 500;
+    }
+  
+    #epic {
+      transform: scale(0.15);
+      position: relative;
+      bottom: 65px;
+      left: 400px;
+    }
+  
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  
+    button:hover {
+      cursor: pointer;
+      background-color: rgba(255, 248, 144, 0.3);
+      border-color: rgba(255, 248, 144, 0.3);
+    }
+  
+    .boton1 {
+      width: 275px;
+      height: 110px;
+      border: solid lightgrey 1px;
+      font-weight: bold;
+      position: absolute;
+      color: white;
+      background-color: rgb(255, 255, 255, 0.2);
+      left: 43%;
+      transition-duration: 500ms;
+      padding: 0;
+    }
+  
+    .video{
+      width: 100%;
+      height: 700px;
+      padding-top: 100px;
+    }
+  
+    .explora {
+      width: 100%;
+      height: 700px;
+      padding-top: 200px;
+    }
+  
+    .exp-txt {
+      padding-top: 50px ;
+      width: 52%;
+      height: 500px;
+      float: left;
+      margin-right: 80px ;
+    }
+  
+    .exp-img {
+      width: 40%;
+      height: 500px;
+      float: left;
+      padding-top: 60px;
+    }
+  
+    .h2-a {
+      color: white;
+      text-align: center;
+      display: block;
+      font-size: 50px;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+  
+    .iframe {
+      width: 100%;
+      height: 600px;
+    }
+  
+    .iframe-1 {
+      width: 45%;
+      height: 600px;
+      float: left;
+      margin-left: 100px;
+    }
+  
+    .iframe-img {
+      width: 45%;
+      height: 600px;
+      float: left;
+      text-align: left;
+    }
+  
+    .discover-secrets {
+      width: 100%;
+      height: 300px;
+    }
+  
+    /* FINAL CONTENIDO */
+  
+    /* INICIO FOOTER */
+  
+    footer {
+      width: 100%;
+      height: 1200px;
+      margin-top: 100px;
+      float: left;
+    }
+  
+    .discord {
+      background-image: url(../img/footerimg.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 500px;
+    }
+    
+    .boldgrey {
+      text-align: center;
+      color: lightgrey;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    .unite {
+      text-align: center;
+      color: white;
+      font-size: 60px;
+    }
+    
+    .adventure {
+      text-align: center;
+      color: rgb(145, 145, 145);
+      font-size: 18px;
+    }
+    
+    .joindiv {
+      width: 10%;
+      height: 8%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .joinbutton {
+      width: 100%;
+      height: 100%;
+      background-color: rgb(255, 255, 255, 0.2);
+      display: block;
+      border: solid lightgrey 1px;
+      transition-duration: 500ms;
+    }
+  
+    #datcord {
+      transform: scale(0.15);
+      float: left;
+      margin-top: -33%;
+      margin-left: -50%;
+    }
+    
+    #dosecords {
+      float: left;
+      font-size: 22px;
+      margin-bottom: 10%;
+      margin-left: 35%;
+    }
+    
+    .publishers {
+      width: 75%;
+      height: 100px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    #moria {
+      float: left;
+      transform: scale(0.3);
+      margin-top: -2%;
+      margin-left: -18%;
+    }
+    
+    #me {
+      float: right;
+      margin-top: 2%;
+    }
+    
+    #free {
+      float: right;
+      margin-right: 2%;
+      margin-top: 2%;
+    }
+    
+    #north {
+      float: right;
+      margin-right: 2%;
+      margin-top: 2%;
+    }
+    
+    .enlaces {
+      width: 75%;
+      height: 320px;
+      position: relative;
+      left: 50%;
+      top: 12%;
+      transform: translateX(-50%);
+    }
+    
+    .discover {
+      float: left;
+      width: 20%;
+      height: 100%;
+    }
+    
+    .headers {
+      color: lightgrey;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    
+    .footerlinks {
+      color: lightgrey;
+      font-size: 15px;
+      margin-top: 30px;
+      transition-duration: 100ms;
+    }
+    
+    .footlink1 {
+      width: 120px;
+    }
+    
+    .footlink2 {
+      width: 120px;
+    }
+    
+    .footlink3 {
+      width: 120px;
+    }
+    
+    .footerlinks:hover {
+      color: white
+    }
+    
+    .roundbtn {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    
+    .x {
+      margin-left: -8%;
+    }
+    
+    #x {
+      margin-top: 5px;
+      transform: scale(0.9);
+    }
+    
+    .tik {
+      margin-left: -4%;
+    }
+    
+    #tik {
+      margin-top: 4px;
+    }
+    
+    #discordunavezmas {
+      margin-top: 4px;
+    }
+    
+    .youtube {
+      margin-left: 4%;
+    }
+    
+    #youtube {
+      margin-top: 2px;
+    }
+    
+    .overflow {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .registro {
+      float: right;
+      width: 32%;
+      height: 100%;
+    }
+    
+    #signup {
+      margin-top: 0px;
+      font-size: 24px;
+    }
+    
+    input {
+      width: 98%;
+      height: 35px;
+      color: white;
+      background-color: inherit;
+      border: 1px solid grey;
+      outline: none;
+      border-radius: 1px;
+      transition: 200ms;
+    }
+    
+    ::placeholder {
+      color: white;
+      opacity: 1;
+    }
+    
+    .invalid {
+      border: 1px solid red;
+    }
+    
+    .botonregistro {
+      width: 99.5%;
+      height: 40px;
+      margin-top: 10px;
+      background-color: rgba(34,34,38);
+      border-color: grey;
+      font-weight: bold;
+      font-size: 14px;
+      transition: none;
+    }
+    
+    .botonregistro:hover {
+      background-color: rgb(169, 169, 169);
+      cursor: pointer;
+    }
+    
+    .disclaimer {
+      width: 75%;
+      height: 18%;
+      position: relative;
+      left: 50%;
+      margin-top: 10%;
+      transform: translateX(-50%);
+    }
+    
+    .cosaslegales {
+      float: left;
+      margin-right: 1%;
+      font-size: medium;
+    }
+    
+    .cosaslegales:hover {
+      color: white;
+      cursor: pointer;
+    }
+    
+    #eula {
+      float: left;
+      margin-left: -35.2%;
+      margin-top: 4%;
+      font-size: 12px;
+      line-height: 20px;
+    }
+    
+    .rating {
+      float: right;
+      margin-top: 5%;
+      margin-left: 1%;
+    }
+  
+    .button-f {
+      width: 3.5%;
+      height: 15%;
+      font-size: 22px;
+      font-weight: bold;
+      color: white;
+      background-color: rgb(255, 255, 255, 0.2);
+      display: block;
+      border: solid lightgrey 1px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      transition-duration: 500ms;
+    }
+  
+    .button-join {
+      width: 100%;
+      height: 100%;
+      font-size: 22px;
+      font-weight: bold;
+      color: white;
+      background-color: rgb(255, 255, 255, 0.2);
+      display: block;
+      border: solid lightgrey 1px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      transition-duration: 500ms;
+    }
+  
+    /* FINAL FOOTER */
+  
+    /* INICIO COOKIES */
+  
+    .cookie-container {
+      position: fixed;
+      bottom: 1px;
+      right: 1px;
+      width: 400px;
+      height: 255px;
+      background: #000;
+      color: #fff;
+      padding: 10px;
+      display: none;
+      border: 1px solid gray;
+      border-radius: 4px;
+      z-index: 1;
+  }
+  
+  .cookie-txt {
+      width: 100%;
+      height: 160px;
+      margin-left: 10px;
+      float: left;
+  }
+  
+  .cookie-button {
+      float: left;
+      margin-left: 10px;
+  }
+  
+  .cookie-btn {
+      background: #000;
+      color: #fff;
+      width: 150px;
+      height: 50px;
+      border: 1px solid lightgray;
+      cursor: pointer;
+      float: left;
+      transition-duration: 500ms;
+      font-size: 15px;
+  }
+  
+  .close-btn {
+      cursor: pointer;
+      color: white;
+      align-items: center;
+  }
+  
+  .close-button {
+      float: right;
+  }
+  
+  .boton-close {
+    border-radius: 50%;
+    padding: 8px 12px;
+    background-color: #222326;
+    border: 1px solid lightgray;
+  }
+  
+  .p-c {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .p-d {
+    color: rgba(224, 238, 241, .6);
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+  }
+  
+  .p-e {
+    color: rgba(224, 238, 241, .6);
+  }
+  
+  .h2-b {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.4;
+  }
+  
+  /* FINAL COOKIES */

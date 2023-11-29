@@ -1,0 +1,23 @@
+body {
+    font-family: "Tuna-Medium";
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: white;
+    opacity: 0.5;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2.0;
+  }
+
+  h2 {
+    color: white;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }

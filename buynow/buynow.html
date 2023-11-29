@@ -4,12 +4,36 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../img/logo.png">
         <link rel="stylesheet" href="buynow.css">
         <script src="buynow.js"></script>
         <title>Buy Now | The Lord of the Rings: Return to Moria™</title>
     </head>
     
-    <body>
+    <body onload="nav_onload()" onload="aceptarCookies()">
+        <header class="header">
+            <nav class="nav">
+                <button id="menu-boton"><img src="../img/nav.png"></button>
+                <ul class="menu" id="menu-lista">
+                    <li><a class="a1" href="#">News & Updates</a></li>
+                    <hr>
+                    <li><a class="a1" href="#">Community</a></li>
+                    <hr>
+                    <li><a class="a1" href="#">Media</a></li>
+                    <hr>
+                    <li><a class="a1" href="#">Support</a></li> 
+                </ul>
+            </nav>
+            
+            <section class="inicio">
+                <a href="../index.html"><button id="home"> <img src="../img/home.png" width="220px"></button></a>
+            </section>
+            
+            <section class="comprar">
+                <button id="buy" onclick="recarga()"><img src="../img/buy.png"></button>
+            </section>
+        </header>
+
         <div id="main">
             <div class="filler"></div>
     
@@ -36,16 +60,16 @@
                         <p class="nodispgrey">COMING SOON</p></div>
                     </div>
 
-                    <img src="./img/epic_logo.png" id="epic">
-                    <img src="./img/play_logo.png" id="play">
-                    <img src="./img/xbox_logo.png" id="xbox">
+                    <img src="../img/epic_logo.png" id="epic">
+                    <img src="../img/play_logo.png" id="play">
+                    <img src="../img/xbox_logo.png" id="xbox">
                 </div>
             </div>
 
             <div class="filler"></div>
         </div>
 
-        <img src="./img/fondocompra.jpeg" id="fondocompra">
+        <img src="../img/fondocompra.jpeg" id="fondocompra">
 
         <footer>
             <div class="discord">
@@ -55,26 +79,26 @@
         
                 <div class="joindiv">
                     <a href="https://discord.com/invite/6TNP7as9md">
-                    <img src="./img/discord_logo_join.png" id="datcord">
-                            <button class="joinbutton"><p id="dosecords">Join Now</p></button>
+                    <img src="../img/discord_logo_join.png" id="datcord">
+                        <button class="joinbutton"><p id="dosecords">Join Now</p></button>
                     </a>
                 </div>
             </div>
 
             <div class="publishers">
-                <img src="./img/moria_logo.png" id="moria">
+                <img src="../img/moria_logo.png" id="moria">
 
-                <img src="./img/me_logo.png" id="me" alt="you" usemap="#you">
+                <img src="../img/me_logo.png" id="me" alt="you" usemap="#you">
                 <map name="you">
                     <area shape="default" href="https://www.middleearth.com/">
                 </map>
 
-                <img src="./img/freerange_logo.png" id="free" alt="expensive" usemap="#expensive">
+                <img src="../img/freerange_logo.png" id="free" alt="expensive" usemap="#expensive">
                 <map name="expensive">
                     <area shape="default" href="https://www.freerangegames.com/">
                 </map>
 
-                <img src="./img/north_logo.png" id="north" alt="south" usemap="#south">
+                <img src="../img/north_logo.png" id="north" alt="south" usemap="#south">
                 <map name="south">
                     <area shape="default" href="https://northbeachgames.com/">
                 </map>
@@ -84,19 +108,19 @@
                 <div class="discover">
                     <p class="headers">DISCOVER MORIA</p>
                         <p class="footerlinks footlink1">
-                            <a href="">News & Updates</a>
+                            <a href="../news/patch.html">News & Updates</a>
                         </p>
                         <p class="footerlinks footlink3">
-                            <a href="">Community</a>
+                            <a href="../community/community.html">Community</a>
                         </p>
                         <p class="footerlinks footlink3">
-                            <a href="">Media</a>
+                            <a href="../media/media.html">Media</a>
                         </p>
                         <p class="footerlinks footlink3">
-                            <a href="">Support</a>
+                            <a href="../support/support.html">Support</a>
                         </p>
                         <p class="footerlinks footlink2">
-                            <a href="">Contact Us</a>
+                            <a href="#">Contact Us</a>
                         </p>
                 </div>
 
@@ -110,19 +134,19 @@
                 <div class="discover">
                     <p class="headers">DISCOVER MORIA</p>
                         <a href="https://twitter.com/ReturnToMoria" class="overflow">
-                            <button class="roundbtn x"><img src="./img/x_logo.png" id="x"></button>
+                            <button class="roundbtn x"><img src="../img/x_logo.png" id="x"></button>
                         </a>
                         
                         <a href="https://www.tiktok.com/@returntomoria">
-                            <button class="roundbtn tik"><img src="./img/tiktok_logo.png" id="tik"></button>
+                            <button class="roundbtn tik"><img src="../img/tiktok_logo.png" id="tik"></button>
                         </a>
                         
                         <a href="https://discord.com/invite/6TNP7as9md">
-                            <button class="roundbtn"><img src="./img/discord_logo.png" id="discordunavezmas"></button>
+                            <button class="roundbtn"><img src="../img/discord_logo.png" id="discordunavezmas"></button>
                         </a>
 
                         <a href="https://www.youtube.com/channel/UCA4VOJQMSAqT90dF59ZSBRQ">
-                            <button class="roundbtn youtube"><img src="./img/youtube_logo.png" id="youtube"></button>
+                            <button class="roundbtn youtube"><img src="../img/youtube_logo.png" id="youtube"></button>
                         </a>
                 </div>
 
@@ -149,10 +173,31 @@
                 ©2023 North Beach Games and associated logod and names are registered trademarks of Open Door Entertainment, LLC. All rights reserved.<br>
                 </p>
 
-                <img src="./img/esrb.png" class="rating">
-                <img src="./img/violence.png" class="rating">
-                <img src="./img/pegi.png" class="rating">
+                <img src="../img/esrb.png" class="rating">
+                <img src="../img/violence.png" class="rating">
+                <img src="../img/pegi.png" class="rating">
             </div>
         </footer>
+          <!-- FINAL FOOTER -->
+
+  <!-- INICIO COOKIES -->
+
+  <div class="cookie-container" id="cookieContainer">
+    <div class="close-button">
+        <button class="boton-close">
+            <span class="close-btn" width="100%" height="100%" onclick="cerrarVentana()">&#10006;</span>
+        </button>
+    </div>
+    <div class="cookie-txt">
+        <h2 class="h2-b">Cookie Settings</h2>
+        <p class="p-d">By clicking "Accept All Cookies", you agree to the <br>storing of cookies on your device to enhance site navigation, analyze site usage and assist in our <br> marketing efforts.</p>
+    </div>
+    <div class="cookie-button">
+        <button class="cookie-btn" onclick="aceptarCookies()"><p class="p-c">Accept All Cookies</p></button>
+    </div>
+  </div>
+
+<!-- FINAL COOKIES -->
+        <script src="./buynow.js"></script>
     </body>
 </html>

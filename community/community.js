@@ -21,3 +21,40 @@ function nav_onload(){
   var menuList = document.getElementById("menu-lista");
   menuList.style.display = "none";
 }
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+
+
+function aceptarCookies() {
+  document.getElementById('cookieContainer').style.display = 'none';
+
+  // Establecer una cookie que expire en 30 días (ajusta según tus necesidades)
+  document.cookie = "cookiesAceptadas=true; expires=" + new Date(new Date().getTime() + 30 * 24 * 60 * 60 * 1000).toUTCString();
+  cerrarVentana();
+}
+
+function cerrarVentana() {
+  document.getElementById('cookieContainer').style.display = 'none';
+}
+
+// Mostrar la ventana de cookies si no se ha aceptado y han pasado al menos 1 segundo
+setTimeout(function() {
+  if (!document.cookie.includes("cookiesAceptadas")) {
+      document.getElementById('cookieContainer').style.display = 'block';
+  }
+}, 1000);
+  
